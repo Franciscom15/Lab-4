@@ -1,0 +1,274 @@
+ex 1 
+ Scanner entrada = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = entrada.nextInt();
+       
+
+       
+        if (num % 2 == 0) 
+        {
+            
+            System.out.println(num + " even ");
+
+        }
+        else {
+            System.out.println("odd");
+        } 
+                
+
+ex 2
+  Scanner entrada = new Scanner (System.in);
+        System.out.println("musicians");
+        int num = entrada.nextInt();
+       
+
+       
+        if (num <= 0) 
+        {
+            
+            System.out.println("not a group");
+
+        }
+        else if (num == 1)
+        {
+            System.out.println("solo");
+        } 
+
+        else if (num == 2)
+        {
+            System.out.println("duet");
+        }   
+        
+        else if (num == 3)
+        {
+            System.out.println("trio");
+        } 
+
+        else if (num == 4)
+        {
+            System.out.println("quartet");
+        } 
+        
+      else if  (num >4)
+        {
+            System.out.println("this is a large group");
+        } 
+
+       
+    }
+    }
+    
+    
+    ex 3
+    
+     var room = "dining room";
+var suspect = "Mr. Parkes";
+var weapon = "";
+var caseSolved = false;
+
+ if (room == "dining room" && suspect == "Mr. Parkes") {
+     weapon = "knife";
+     caseSolved = true;
+ } else if (room == "ballroom" && suspect == "Mr. Kalehoff") {
+     weapon = "poison";
+     caseSolved = true;
+ } else if (room =="gallery" && suspect == "Ms. Van Cleve") {
+     weapon = "trophy";
+     caseSolved = true;
+ }  else if (room =="billiards room" && suspect == "Mrs. Sparr") {
+     weapon = "pool stick";
+     caseSolved = true;
+ } else {
+    system.out.println ("Not solved!");
+ }
+
+ if (caseSolved) {
+    system.out.println(suspect +  "did it in the"  + room +  "with the"  + "weapon");
+ }
+    }
+}
+
+ex 4
+ Scanner entrada = new Scanner(System.in);
+        System.out.println("1.Vanilla or 2.chocolate:");
+        System.out.println("Choose a flavor:");
+        int f = entrada.nextInt();
+
+        System.out.println("1.cone or 2.bowl:");
+        System.out.println("Choose a vessel:");
+        int v= entrada.nextInt();
+
+        System.out.println(" 1.Sprinkles or 2.peanuts:");
+        System.out.println("Choose a topping:");
+        int t= entrada.nextInt();
+
+
+        
+        if ( f ==  1 && v == 1 && t==1  )
+        {
+            System.out.println ("Your ice cream flavor is Vanilla, in a cone with sprinkles");
+        }
+        else if (f == 1 && v == 2 && t==2){
+        System.out.println ("Your ice cream flavor is Vanilla, in a bowl with peanuts");
+
+        }
+        else if (f == 2 && v ==1  && t==1){
+            System.out.println ("Your ice cream flavor is chocolate, in a bowl with sprinkles");
+        }
+        else if (f == 2 && v ==2  && t==1){
+            System.out.println ("Your ice cream flavor is chocolate, in a bowl with peanuts");
+        }
+        else if (f == 2 && v ==2  && t==2){
+            System.out.println ("Your ice cream flavor is chocolate, in a bowl with sprinkles");
+        }
+
+      
+        
+
+    }
+}
+
+
+ex 5
+var shirtWidth = 25; // size S (small)
+var shirtLength = 31; // size M (medium)
+var shirtSleeve = 8.88; // size M (medium)
+
+let sW = ""
+let sL = ""
+let sSl = ""
+
+/// shirtWidth
+if( (shirtWidth >= 18 && shirtWidth < 20) && (shirtLength == 28) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+    sW = "S"
+    sl = "S"
+    sSl = "S"
+    console.log("S")
+}else if((shirtWidth >= 20 && shirtWidth < 22)  && (shirtLength == 29) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+    sW = "M"
+    sl = "M"
+    sSl = "M"
+    console.log("M")
+}else if( (shirtWidth >= 22 && shirtWidth < 24)  && (shirtLength == 30) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88) ) {
+    sW = "L"
+    sl = "L"
+    sSl = "L"
+    console.log("L")
+}else if((shirtWidth >= 24 && shirtWidth < 26)  && (shirtLength == 31) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+    sW = "XL"
+    sl = "XL"
+    sSl = "XL"
+    console.log("XL")
+}else if( (shirtWidth >= 26 && shirtWidth < 28)  && (shirtLength == 33) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+    sW = "2XL"
+    sl = "2XL"
+    sSl = "2XL"
+    console.log("2XL")
+}else if( (shirtWidth >= 26 && shirtWidth < 28)  && (shirtLength == 34) && (shirtSleeve >= 10.13)) {
+    sW = "3XL"
+    sl = "3XL"
+    sSl = "3XL"
+    console.log("3XL")
+}else {
+    /*sW = ""
+    sl = ""
+    sSl = ""*/
+    console.log("N/A")
+}
+
+ex 6
+
+let eatsPlants = true
+let eatsAnimals = true
+
+if( eatsAnimals == true  && eatsPlants ==false ) {
+    console.log("carnivores")
+}else if( eatsAnimals == false  && eatsPlants ==true ) {
+    console.log("herbivore")
+}else if( eatsAnimals == true  && eatsPlants == true ) {
+    console.log("omnivore")
+}else {
+    console.log("undefined")
+}
+
+ex 7 
+let education = "a Bachelor's degree"
+let salary = 0
+switch (education) {
+    case "no high school diploma":
+        salary = "$25,636"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "high school diploma":
+        salary = "$35,256"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "an Associate's degree":
+        salary = "$41,496"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "a Bachelor's degree":
+        salary = "$59,124"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "a Master's degree":
+        salary = "69,732"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "a Professional degree":
+        salary = "$89,960"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+      break;
+    case "a Doctoral degree":
+        salary = "$84,396"
+        console.log("In 2015, a person with " + education +" earned an average of " + salary.toLocaleString("en-US") + "/year.")
+        break;
+  }
+  
+  
+  ex 8
+  var x = 1;
+
+while (x <= 100) {
+    if( x % 3 === 0 ) {
+         console.log("Fizz")
+    }if( x % 5 === 0 ) {
+        console.log("Buzz")
+    }if( (x % 3 === 0 && x % 5 === 0) ) {
+        console.log("FizzBuzz")
+    }if( x % 3 === 0 || x % 5 === 0  ) {
+        console.log(x)
+    }
+    
+    ex 9
+    let counter = 60
+while( counter >= 0 ) {
+
+    if( counter === 50 ) {
+        system.out.println("Orbiter transfers from ground to internal power")
+    }else if(counter === 31) {
+        system.out.println("Ground launch sequencer is go for auto sequence start")
+    }else if ( counter === 16) {
+        system.out.println("Activate launch pad sound suppression system")
+    }else if( counter === 10 ) {
+        system.out.println("Activate main engine hydrogen burnoff system")
+    }else if( counter === 6 ) {
+        system.out.println("Main engine start")
+    }else if( counter === 0 ) {
+        system.out.println("Solid rocket booster ignition and liftoff!")
+    }else {
+      system.out.println("T-" + counter + " seconds")
+    }
+
+ex 10
+for(let x = 9; x >= 1 ; x--) {
+    system.out.println("hello " + x);
+}
+
+ex 11
+for( let x = 5 ; x <= 9 ; x++  ) {
+    system.out.println(x)
+    
+ex 12
+for (let k = 0 ;k < 200 ;k++) {
+    system.out.println(k);
